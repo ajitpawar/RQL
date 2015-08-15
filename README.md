@@ -12,21 +12,24 @@ Syntax for RQL is similar to SQL
 <br><br>
 
 #### General Syntax
-```SELECT <attrs>
+```
+SELECT <attrs>
  FROM <tables>
  WHERE <condition>
- ORDER BY <order‐expr>```
-<br><br>
+ ORDER BY <order‐expr> 
+```
 
 #### Usage Examples
-Single table
-> SELECT &lt;attrs&gt; FROM &lt;table&gt;
 
-Multiple tables
-> SELECT &lt;attrs&gt; FROM [&lt;table1&gt; &lt;name1&gt;] [&lt;table2&gt; &lt;name2&gt;] ...
+Single table <br>
+```SELECT <attrs> FROM <table>```
 
-Filtering
-> SELECT * FROM Person WHERE (equal? "Name" "David")
+Multiple tables <br>
+```SELECT <attrs> FROM [<table1> <name1>] [<table2> <name2>] ... ```
 
-Order-by
-> SELECT ("Name" "LikesChocolate") FROM Person ORDER BY "Age"
+Filtering <br>
+```SELECT * FROM  Person WHERE (equal? "Name" "David")```
+
+Order-by <br>
+```SELECT ("Name" "LikesChocolate") FROM Person ORDER BY "Age"```
+
